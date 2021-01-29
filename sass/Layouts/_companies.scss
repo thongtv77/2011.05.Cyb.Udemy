@@ -1,0 +1,58 @@
+.partners__content {
+    background: $color-gray-5;
+    padding-top: $pd-0;
+    .partners__h1 {
+        @include styleText($color-black-0, $fs-1, $fw-normal);
+        text-align: center;
+        padding-bottom: $pd-1;
+    }
+    .partners__logo {
+        .logopartners__item {
+            padding-bottom: $pd-2;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .logo-item {
+                padding: $pd-0;
+            }
+        }
+    }
+    .partners__card {
+        .partners__left {
+            border-right: 1px solid rgba(128, 128, 128, 0.372);
+        }
+        .partners__header {
+            a {
+                text-decoration: none;
+                @include styleText($color-black-0, $fs-2, $fw-bold);
+            }
+        }
+        .partners__cmt {
+            @include styleText($color-black-0, $fs-0, $fw-normal);
+            padding: $pd-2 $pd-2 * 2;
+            justify-content: center;
+        }
+    }
+}
+
+// Responsive
+.partners__content {
+    // lớn hơn 768px
+    @include responsive("medium") {
+        .partners__logo {
+            .logopartners__item {
+                display: inline-flex;
+                // flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+        .partners__card {
+            .partners__left {
+                padding: $pd-0;
+            }
+            .partners__cmt {
+                padding: $pd-0 $pd-1;   
+            }
+        }
+    }
+}

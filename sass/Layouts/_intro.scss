@@ -1,0 +1,30 @@
+.intro {
+    background: linear-gradient(to right, $color-red-1, $color-red-0);
+    .intro__content {
+        width: 80%;
+        padding: $mg-1;
+        .intro__item {
+            .intro__icon {
+                @include styleText($color-white-0, $fs-4, $fw-bold);
+                margin-right: $mg-2;
+            }
+            .intro__txt {
+                p:first-child {
+                    padding-top: $pd-1;
+                    @include styleText($color-white-0, $fs-2 - 2, $fw-bold);
+                    margin-bottom: 0;
+                }
+                p:last-child {
+                    @include styleText($color-white-0, $fs-0, $fw-normal);
+                }
+            }
+        }
+    }
+}
+// Responsive
+.intro__content {
+    // lớn hơn 768px
+    @include responsive("medium") {
+        display: none;
+    }
+}

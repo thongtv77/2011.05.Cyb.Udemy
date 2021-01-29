@@ -1,0 +1,41 @@
+.services{
+    background: rgba(128, 128, 128, 0.1);
+    .services__content{
+        width: 80%;
+        padding: $mg-2;
+        .services__item{
+            background: $color-white-0;
+            box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.1) ;
+            padding: $pd-1;
+            align-items: center;
+            height: 100%;
+            border-radius: 20px;
+            margin: 0;
+            .services__icon{
+                @include styleText($color-blue, $fs-4,$fw-bold);
+                margin-right: $mg-2;
+                
+            }
+            .services__txt{
+                p:first-child{
+                    padding-top: $pd-1;
+                    @include styleText($color-black-0, $fs-2 - 2,$fw-bold);
+                    margin-bottom: 0;
+                }
+                p:last-child{
+                    @include styleText($color-gray-2, $fs-0 ,$fw-normal);
+                }
+            }
+        }
+    }
+    
+}
+
+.services {
+    // lớn hơn 992
+    @include responsive("large") {
+        .services__content{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.students{
+    margin-top: $mg-2;
+
+    .student__content{
+        h3{
+            @include styleText($color-black-light, $fs-2, $fw-bold-0)
+        }
+
+        width: 80%;
+        margin: 0 auto;
+        .card-title {
+            @include styleText($color-black-0, $fs-0, $fw-bold);
+        }
+        .card-text {
+            @include styleText($color-gray-4, $fs-1, $fw-normal);
+        }
+        .rating {
+            white-space: nowrap;
+            display: flex;
+            .rating__star {
+                @include styleText($color-yellow, $fs-1, $fw-normal);
+                margin-right: $mg-1;
+            }
+            span:nth-child(2) {
+                @include styleText($color-gray-4, $fs-1, $fw-normal);
+            }
+            span:last-child {
+                @include styleText($color-gray-4, $fs-1, $fw-normal);
+            }
+        }
+        .price {
+            padding: $pd-0;
+            text-align: right;
+            .old__price {
+                @include styleText($color-gray-4, $fs-1, $fw-normal);
+                text-decoration: line-through;
+            }
+            .new__price {
+                @include styleText($color-black-0, $fs-0, $fw-bold);
+            }
+        }
+
+    }
+}

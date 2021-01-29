@@ -1,0 +1,27 @@
+.banner{
+    .banner__cover{
+        width: 100%;
+        padding: $pd-2 * 3;
+        border-top: 10px solid $color-purple;
+        background: $color-black-0;
+        .banner__icon{
+            @include styleText($color-white-0,$fs-3,$fw-bold-1 );
+            
+        }
+        .banner__title{
+            @include styleText($color-white-0,$fs-3,$fw-bold-1 );
+        }
+        .banner__subtitle{
+            @include styleText($color-white-0,$fs-0,$fw-normal );
+        }
+    }
+}
+// Responsive
+.banner{
+    
+    @include responsive("large") {
+        .banner__icon {
+            display: none;
+        }
+    }
+}

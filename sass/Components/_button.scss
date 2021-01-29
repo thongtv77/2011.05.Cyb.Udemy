@@ -1,0 +1,33 @@
+.ude-btnWhite{
+    @include styleButton($color-white-0,$color-black-0,$border-radius,$pd-1 +1, $pd-1 +2);
+
+    @include styleText($color-black-0,$fs-1,$fw-bold-1);
+
+}
+.ude-btnRed{
+    @include styleButton($color-red-0,$color-red-0,$border-radius,$pd-1 +1, $pd-1 +2);
+    @include styleText($color-white-0,$fs-1,$fw-bold-1);
+    &:hover{
+        @include styleHoverButton($color-red-2,$color-red-2,$color-white-0);
+    }
+}
+
+.banner__btn{
+    @include styleButton($color-red-0,$color-red-0,$border-radius,$pd-1 +1, $pd-1 +2);
+    @include styleText($color-white-0,$fs-1,$fw-bold-1);
+    &:hover{
+        @include styleHoverButton($color-red-2,$color-red-2,$color-white-0);
+        
+    }
+}
+
+.btn-primary{
+
+    @include styleButton($color-red-0,$color-red-0,$border-radius,$pd-1 +1, $pd-1 +2);
+    @include styleText($color-white-0,$fs-1,$fw-bold-1);
+    &:hover{
+        @include styleHoverButton($color-red-2,$color-red-2,$color-white-0);
+        
+    }
+}
+

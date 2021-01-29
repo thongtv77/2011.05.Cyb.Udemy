@@ -1,0 +1,43 @@
+.feedback__content {
+    background: $color-gray-5;
+    
+    h1 {
+        @include styleText($color-black-0, $fs-3, $fw-bold);
+    }
+    .card-deck{
+        width: 80%;
+        margin: 0 auto;
+        .card {
+            box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.1);
+            margin: $mg-1;
+            background: $color-white-0;
+            border-radius: 20px;
+            .card-body{
+                padding: $pd-2;
+                .card__img{
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 50%;
+        
+                }
+                .card-title{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: $mg-1;
+                }
+                .card-text{
+                    @include styleText($color-black-0, $fs-0, $fw-normal);
+                    min-height: 130px;
+                    padding: auto $pd-0;
+                    line-height: 1.5em;
+        
+                }
+            }
+            
+            
+        }
+    }
+    
+}

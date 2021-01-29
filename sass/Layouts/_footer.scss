@@ -1,0 +1,32 @@
+.footer__content{
+    border-bottom: 5px solid $color-red-0;
+    .footer__main{
+        
+        padding: $pd-2;
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            @include styleText($color-blue,$fs-1, $fw-normal)
+        }
+    }
+    .footer__bottom{
+        .footer__left{
+            padding: $pd-2;
+            .footer__copyright{
+                @include styleText($color-gray-2,$fs-1, $fw-normal)
+            }
+        }
+        .footer__right{
+            padding: $pd-2;
+            a{
+                text-decoration: none;
+                @include styleText($color-blue,$fs-1, $fw-normal);
+                
+            }
+            
+        }
+    }
+
+}
